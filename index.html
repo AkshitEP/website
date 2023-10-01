@@ -9,10 +9,11 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
 <script type="text/javascript">
-   (function(){
-      emailjs.init("YOUR_PUBLIC_KEY");
-   })();
-</script>
+    (function(){
+       emailjs.init("LdpepX_9XTDJ6LzbT");
+    })();
+ </script>
+ 
 </head>
 <body>
     <div class="container">
@@ -25,8 +26,9 @@
         <h1>Will you go to prom with me?</h1>
         <p>Hi Gazal Sharma :),</p>
         <p>I would be honored if you would be my date to prom. It would mean the world to me.</p>
-        <button onclick = "SendMail()" id="yesBtn">Yes, I'd love to!</button>
-        <button onclick = "SendMail1()" id="noBtn">Sorry, I can't.</button>
+        <button onclick="sendMail('yes')" id="yesBtn">Yes, I'd love to!</button>
+        <button onclick="sendMail('no')" id="noBtn">Sorry, I can't.</button>
+        
     </div>
 
     <script src="script.js"></script>
