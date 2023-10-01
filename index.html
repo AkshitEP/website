@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prom Proposal</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("YOUR_PUBLIC_KEY");
+   })();
+</script>
 </head>
 <body>
     <div class="container">
@@ -17,10 +25,12 @@
         <h1>Will you go to prom with me?</h1>
         <p>Hi Gazal Sharma :),</p>
         <p>I would be honored if you would be my date to prom. It would mean the world to me.</p>
-        <button id="yesBtn">Yes, I'd love to!</button>
-        <button id="noBtn">Sorry, I can't.</button>
+        <button onclick = "SendMail()" id="yesBtn">Yes, I'd love to!</button>
+        <button onclick = "SendMail()" id="noBtn">Sorry, I can't.</button>
     </div>
 
     <script src="script.js"></script>
+
+    
 </body>
 </html>
