@@ -4,6 +4,23 @@ const proposalDiv = document.getElementById("proposal");
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
+function SensMail(){
+    var params{
+    message: "yes"
+    }
+emailjs.send("service_2isq83a", "template_6jf7mof",params).then(function (res){
+    alert("Success! = " + res.status);
+})
+}
+function SensMail1(){
+    var params{
+    message: "no"
+    }
+emailjs.send("service_2isq83a", "template_6jf7mof",params).then(function (res){
+    alert("Success! = " + res.status);
+})
+}
+
 // Event listener for the "Click Me" button
 promButton.addEventListener("click", function () {
     container.style.transform = "scale(0.8)";
@@ -22,3 +39,4 @@ yesBtn.addEventListener("click", function () {
 noBtn.addEventListener("click", function () {
     alert("No worries, thanks for considering it!");
 });
+
